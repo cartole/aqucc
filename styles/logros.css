@@ -1,0 +1,162 @@
+/* Estilos generales */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f8f9fa;
+  color: #f8f8f8;
+  scroll-behavior: smooth;
+  }
+  
+  header {
+    background-color: #003366;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .logo img {
+    height: 45px;
+    margin-right: 12px;
+    transition: transform 0.3s ease;
+  }
+  .logo:hover img {
+    transform: scale(1.1);
+  }
+  .logo span {
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+
+  .home-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+  }
+  nav li {
+    font-weight: 600;
+  }
+  nav a {
+    color: white;
+    font-size: 1.1rem;
+    padding: 0.25rem 0;
+    border-bottom: 3px solid transparent;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  nav a:hover,
+  nav a.active {
+    color: #8cff00;
+    border-bottom: 3px solid #8cff00;
+  }
+  
+  .logros h1 {
+    text-align: center;
+    color: #004080;
+    margin-bottom: 2rem;
+  }
+  
+  .logros-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .logro {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 1rem;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logro img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .logro h2 {
+    color: #004080;
+    margin-bottom: 0.5rem;
+  }
+  
+  .logro p {
+    color: #333;
+  }
+  
+  footer {
+    background-color: #002244;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  /* --- VISTA MÓVIL --- */
+@media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 1rem;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 0.5rem;
+      width: 100%;
+    }
+  
+    nav li {
+      width: 100%;
+    }
+  
+    nav a {
+      display: block;
+      padding: 0.5rem;
+      background-color: #0066cc;
+      border-radius: 8px;
+      text-align: center;
+    }
+  
+    .logros-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .logro {
+      width: 90%;
+    }
+  
+    .card {
+      width: 90%;
+      margin: 1rem auto;
+    }
+  }
+  
